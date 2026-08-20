@@ -1,0 +1,242 @@
+/* Deliberately minimal — spec §10 says UI does not matter for V1. Legible, not designed. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px 16px 64px;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  color: #1a1a1a;
+  background: #fafafa;
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0 0 4px;
+}
+
+h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #666;
+  margin: 0 0 12px;
+}
+
+.sub {
+  margin: 0 0 24px;
+  color: #555;
+  max-width: 62ch;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-top: 12px;
+}
+
+.thumb {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  background: #f4f4f4;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  flex: none;
+}
+
+.tiles {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+  padding: 10px 14px;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  font: inherit;
+  min-width: 120px;
+}
+
+.tile.on {
+  border-color: #1a1a1a;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.tile:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.tile small {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.lbl {
+  display: block;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+input[type='text'],
+#hint {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  font: inherit;
+  margin-bottom: 12px;
+}
+
+.go {
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 4px;
+  background: #1a1a1a;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.go:disabled {
+  background: #bbb;
+  cursor: default;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: #f4f4f4;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  display: block;
+}
+
+figcaption {
+  font-size: 12px;
+  color: #555;
+  margin-top: 6px;
+}
+
+.fail {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  font-size: 12px;
+  color: #a11;
+  background: #fff4f4;
+  border: 1px solid #f0caca;
+  border-radius: 4px;
+  overflow: auto;
+}
+
+.pre {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 11px;
+  white-space: pre-wrap;
+  background: #f6f6f6;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  padding: 10px;
+  max-height: 320px;
+  overflow: auto;
+}
+
+.det {
+  margin-top: 16px;
+  font-size: 13px;
+}
+
+.det summary {
+  cursor: pointer;
+  color: #555;
+}
+
+.link {
+  border: 0;
+  background: none;
+  padding: 0;
+  font: inherit;
+  font-size: 13px;
+  color: #06c;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.muted {
+  color: #777;
+  margin: 0;
+}
+.err {
+  color: #a11;
+  margin: 0;
+}
+.ok {
+  margin: 0 0 6px;
+}
+
+.foot {
+  font-size: 12px;
+  color: #777;
+  text-align: right;
+}
+
+code {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+.note {
+  background: #fffdf3;
+  border: 1px solid #e8dfae;
+  border-radius: 4px;
+  padding: 12px 14px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+.note ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+.note li {
+  margin-bottom: 4px;
+}

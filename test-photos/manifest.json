@@ -1,0 +1,41 @@
+{
+  "source": "Wikimedia Commons",
+  "fetched": [
+    {
+      "slug": "mug-ibm",
+      "note": "rigid/simple, printed logo",
+      "file": "test-photos/mug-ibm.jpg",
+      "sourceTitle": "IBM merchandising coffee mug with company logo.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:IBM_merchandising_coffee_mug_with_company_logo.jpg",
+      "licence": "CC BY-SA 4.0",
+      "artist": "Pittigrilli"
+    },
+    {
+      "slug": "watch-fossil",
+      "note": "reflective metal, fine dial text",
+      "file": "test-photos/watch-fossil.jpg",
+      "sourceTitle": "Fossil wristwatch with white background.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Fossil_wristwatch_with_white_background.jpg",
+      "licence": "CC BY-SA 4.0",
+      "artist": "Cvmontuy"
+    },
+    {
+      "slug": "backpack",
+      "note": "soft fabric texture",
+      "file": "test-photos/backpack.jpg",
+      "sourceTitle": "Backpack small.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Backpack_small.jpg",
+      "licence": "CC BY-SA 4.0",
+      "artist": "Виктор Пинчук"
+    },
+    {
+      "slug": "headphones-bose",
+      "note": "mixed material, moulded plastic, branding",
+      "file": "test-photos/headphones-bose.jpg",
+      "sourceTitle": "Bose QuietComfort 25 Acoustic Noise Cancelling Headphones with Carry Case.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bose_QuietComfort_25_Acoustic_Noise_Cancelling_Headphones_with_Carry_Case.jpg",
+      "licence": "CC BY-SA 3.0",
+      "artist": "Florian Fuchs"
+    }
+  ]
+}
